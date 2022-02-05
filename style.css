@@ -48,7 +48,6 @@ body {
   font-size: 26px;
   font-family: Netflix Sans, Arial, Helvetica, sans-serif;
   top: 57%;
-
 }
 .para {
   margin: 0 26%;
@@ -58,4 +57,26 @@ body {
   top: 68%;
   font-size: 19.2px;
   font-family: Netflix Sans, Arial, Helvetica, sans-serif;
+}
+.input-field input {
+  width: 450px;
+  height: 60px;
+  outline: none;
+  margin: 400px 0 0 320px;
+  line-height: 44px;
+  padding-top: 30px;
+}
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  font-weight: bolder;
+}
+.input-field label {
+  position: absolute;
+  bottom: 97px;
+  color: grey;
+  left: 330px;
+  pointer-events: none;
+  transition: all 0.2s ease;
 }
